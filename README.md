@@ -11,8 +11,8 @@ Data are **hard-coded** in **JS**.
 
 Example of different data that contain the **movement** of dates : :white_check_mark:
 
-`
-const account1 = {
+
+`const account1 = {
   owner: "Anthony Gyselman",
   movements: [200, 455.23, -306.5, 25000, -642.21, -133.9, 79.97, 1300],
   interestRate: 1.2, // %
@@ -30,16 +30,15 @@ const account1 = {
   ],
   currency: "EUR",
   locale: "pt-PT", // de-DE
-};
-`
+};`
 
 A **timer** will **close** your **session** after a certain **time** that you define.
 
 Example of the function that allows to do this : :white_check_mark:
 
 // Function
-`
-const startLogOutTimer = function () {
+
+`const startLogOutTimer = function () {
   const tick = function () {
     const min = String(Math.trunc(time / 60)).padStart(2, 0);
     const sec = String(time % 60).padStart(2, 0);
@@ -66,8 +65,7 @@ const startLogOutTimer = function () {
   const timer = setInterval(tick, 1000);
 
   return timer;
-};
-`
+};`
 // End Function
 
 You can **transfer** money from one account to another or request a **loan** from the bank :bank: (virtual).
@@ -86,4 +84,4 @@ This project highlights **dom manipulation** in JavaScript.
 
 ## Below a gif allowing to realize the design and how the app works
 
-![](./asset/images/Bankist.gif)
+![](Bankist.gif)
